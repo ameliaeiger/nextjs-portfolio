@@ -1,15 +1,29 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nunito:wght@100,500&family=Pacifico&display=swap');
+/* @import url("../public/fonts/CotfordDisplay-XBold.otf"); */
+
+/* html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
-}
+} */
 
-* {
+/* * {
   box-sizing: border-box;
+} */
+
+body {
+      width: 100vw;
+      height: 100vh;
+
+      padding: 0px;
+      margin: 0px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 a {
@@ -17,11 +31,83 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 img {
   max-width: 100%;
   display: block;
 }
+
+.primary-text {
+      color: #131313;
+}
+
+.secondary-text {
+      color: #636361;
+}
+
+.cta-text {
+      color: #9E052A;
+}
+
+.cta-bg {
+      background-color: #9E052A;
+}
+
+.flex-just-align {
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+}
+
+.column {
+      flex-direction: column;
+}
+.b-shadow-light {
+      box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+/* Animations */
+
+@keyframes text {
+      0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+      }
+      50% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+}
+
+.text-animate {
+      animation-name: text;
+      animation-duration: 1s;
+}
+
+/* Custom psuedo elements */
+.btn:hover {
+      cursor: pointer;
+      text-decoration: none;
+}
+
+/* Font families */
+.cotford {
+      font-family: "Cotford";
+}
+
+.pacifico {
+      font-family: "Pacifico";
+}
+
+.nunito {
+      font-weight: 100;
+      font-family: "Nunito";
+}
+
+.lato {
+      font-family: "Lato";
+}
+
+/* $home-pink: #fff4ee;
+$home-beige: #f8f1e3; */

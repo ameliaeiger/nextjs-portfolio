@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
+import Head from 'next/head'
 import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 
@@ -16,22 +16,15 @@ const Home = ({ allPostsData }) => {
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+            <title>{siteTitle}</title>
       </Head>
-      
-      {/* <section className={utilStyles.headingMd}>
-        <p>SAMPLE COPY TEXT</p>
-        <p>
-          HERE IS SOME MORE SAMPLE COPY
-        </p>
-      </section> */}
-
+{/* 
         <section className={utilStyles.imageContainer}>
           <p>SAMPLE COPY TEXT</p>
           <p>
             HERE IS SOME MORE SAMPLE COPY
           </p>
-        </section>
+        </section> */}
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

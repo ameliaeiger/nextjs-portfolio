@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nunito:wght@300&family=Pacifico&display=swap');
+
 .heading2Xl {
      font-size: 2.5rem;
      line-height: 1.2;
@@ -52,15 +56,39 @@
 }
 
 
-/* MINE */
+/* Logo */
+.logo {
+      font-size: calc(15px + 6 * ((100vw - 320px) / 600));
+      display: flex;
+      justify-content: center;
+}
 
-.imageContainer {
-     border: 2px solid red;
+/* Font families */
+.pacifico {
+      font-family: "Pacifico";
+}
 
+.nunito {
+      font-family: "Nunito";
+}
 
+.lato {
+      font-family: "Lato";
+}
+@keyframes text {
+      0% {
+        opacity: 0%;
+        transform: translateX(-100px);
+      }
+      50% {
+        opacity: 0%;
+      }
+      100% {
+        opacity: 100%;
+      }
+}
 
-     /* background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-image: url("../public/images/background.jpg"); */
+.text {
+      animation-name: text;
+      animation-duration: 1s;
 }
