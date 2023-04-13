@@ -1,0 +1,42 @@
+.containerContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0px;
+      margin: 0px;
+
+      width: 100%;
+}
+
+.container {
+      display: grid;
+      grid-template-columns: 10% 15% 25% 25% 15% 10%;
+      grid-template-rows: 10% 15% 25% 25% 15% 10%;
+      grid-gap: 10px;
+
+      position: absolute;
+      top: 0px;
+      left: 0px;
+
+      width: 100%;
+      height: 100%;
+}
+
+.siteName {
+      grid-column: 3 / span 2;
+      grid-row: 1;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.heroContainer {
+      grid-column: 2 / span 4;
+      grid-row: 2 / 9;
+
+      display: flex;
+
+      z-index: 0;
+}

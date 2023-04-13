@@ -1,0 +1,45 @@
+.navContainer {
+      grid-row: 1;
+      grid-column: 2;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 50px;
+}
+
+.navLinks {
+      display: flex;
+      justify-content: space-evenly;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 255, 255, 0.95);
+}
+
+.hidden {
+      display: none !important;
+}
+
+.navLinks a {
+      color: black;
+      z-index: 2;
+}
+
+.navLinks a {
+      font-size: 1.3rem;
+      padding: 8px;
+}
+
+.hamburger {
+      grid-column: 2;
+      grid-row: 1;
+    
+      display: flex;
+      align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+      .navLinks a {
+            font-size: calc(1rem + 6 * ((100vw - 320px) / 600));
+      }
+}
