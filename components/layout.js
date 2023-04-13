@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import Head from "next/head"
 
 // Custom
-import HeroImage from "./hero-image"
+import LandingContent from "./landing-content"
 import Menu from "./menu"
 
 // Styles
@@ -60,7 +60,7 @@ export default function Layout({ children, home }) {
       {/* ----------------------------- CONTENT ------------------------------ */}
             {home && (
                   <div className={`${styles.heroContainer} text-animate`}>
-                        <HeroImage />
+                        <LandingContent />
                   </div>
             )}
             {!home && <section>{children}</section>}
