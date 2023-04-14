@@ -24,6 +24,7 @@ yarn-debug.log*
 yarn-error.log*
 .prettierrc
 .eslintrc.json
+.vscode/
 
 # local env files
 .env.local
