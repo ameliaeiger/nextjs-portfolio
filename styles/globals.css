@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100&&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nunito:wght@100,500&family=Pacifico&display=swap');
-/* @import url("../public/fonts/CotfordDisplay-XBold.otf"); */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Nunito:wght@100...500&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100...900&display=swap');
 
 
 /* html,
@@ -96,10 +94,13 @@ img {
 /* Font families */
 .cotford {
       font-family: "Cotford";
+      font-weight: 100;
 }
 
 .pacifico {
       font-family: "Pacifico";
+      font-weight: 100;
+
 }
 
 .nunito {
@@ -109,10 +110,14 @@ img {
 
 .lato {
       font-family: "Lato";
+      font-weight: 100;
+
 }
 
 .montserrat {
       font-family: "Montserrat";
+      font-weight: 100;
+
 }
 /* $home-pink: #fff4ee;
 $home-beige: #f8f1e3; */
