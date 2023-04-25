@@ -1,5 +1,4 @@
 import Image from "next/image"
-import this from "../"
 
 import styles from "./styles/tech-icon-styles.module.scss"
 
