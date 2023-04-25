@@ -53,7 +53,7 @@ export default function Layout({ children, home }) {
                   <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
 
                   {home && (
-                        <h1 className={`${utilStyles.logo} ${utilStyles.text} ${styles.siteName} nunito`}>
+                        <h1 className={`${utilStyles.logo} ${utilStyles.text} ${styles.siteName}`}>
                               <Image src="/icons/lightblack.png" width={200} height={200} className={styles.icon}/>
                               Amelia Eiger
                         </h1>
