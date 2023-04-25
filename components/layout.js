@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 
 // Next
 import Head from "next/head"
+import Image from "next/image"
 
 // Custom
 import LandingContent from "./landing-content"
@@ -10,6 +11,8 @@ import Menu from "./menu"
 // Styles
 import utilStyles from "../styles/utils.module.css"
 import styles from "./styles/layout.module.scss"
+import Services from "./services"
+import { Tooltip } from "@mui/material"
 
 const name = "AMELIA EIGER"
 export const siteTitle = "Amelia Eiger"
@@ -45,29 +48,37 @@ export default function Layout({ children, home }) {
 
 
       <div style={{minWidth: dimensions.width, minHeight: dimensions.height}} className={styles.containerContainer}>
-      <div className={styles.container} style={{minHeight: dimensions.height}} >
+            <div className={styles.container} style={{minHeight: dimensions.height}} >
+            {/* ------------------------- HEADER ------------------------- */}
+                  <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
 
-      {/* ------------------------- HEADER ------------------------- */}
-            <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
-
-            {home && (
-                  <h1 className={`${utilStyles.logo} ${utilStyles.text} ${styles.siteName} nunito`}>{name}</h1>
-            )}
-      {/* ------------------------------------------------------------------ */}
-
-
-
-      {/* ----------------------------- CONTENT ------------------------------ */}
-            {home && (
-                  <div className={`${styles.heroContainer} text-animate`}>
-                        <LandingContent />
-                  </div>
-            )}
-            {!home && <section>{children}</section>}
-      {/* -------------------------------------------------------------------- */}
+                  {home && (
+                        <h1 className={`${utilStyles.logo} ${utilStyles.text} ${styles.siteName} nunito`}>
+                              <Image src="/icons/lightblack.png" width={200} height={200} className={styles.icon}/>
+                              Amelia Eiger
+                        </h1>
+                  )}
+                        <div className={`${styles.mailContainer} text-animate`}>
+                              <Tooltip title="Contact Me" placement="right" arrow>
+                                    <Image src="/icons/bubble2.png" width={200} height={200} className={styles.mail}/>
+                              </Tooltip>
+                        </div>
+            {/* ------------------------------------------------------------------ */}
+            {/* ----------------------------- CONTENT ------------------------------ */}
+                  {home && (
+                        <div className={`${styles.heroContainer} text-animate`}>
+                                    <LandingContent />
+                              </div>
+                        )}
+                  {!home && <section>{children}</section>}
+            {/* -------------------------------------------------------------------- */}
+            </div>
+            <div 
+                  className="text-animate"
+                  style={{position: "absolute", top: dimensions.height, minHeight: dimensions.height, minWidth: dimensions.width}}>
+                  <Services />
+            </div>
       </div>
-    </div>
-
     </>
   )
 }

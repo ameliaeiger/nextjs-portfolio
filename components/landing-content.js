@@ -13,8 +13,11 @@ const myFont = localFont({ src: "../public/fonts/Recoleta-RegularDEMO.otf" })
 const LandingContent = () => {
      return (
             <div className={`${styles.textContainer} text-animate`} >
-                  <p className={`${styles.CTAtext} ${myFont.className}`} > Hi, I'm Amelia.</p>
-                  <p className={`${styles.CTAsubtext} nunito`} > Front-End Engineer, UI/UX Designer, and mobile application developer. </p>
+                  <p className={`${myFont.className} ${styles.CTAtext}`} > Hi, I'm Amelia. </p>
+                  <div className={`${styles.CTAsubtext} montserrat`}>
+                        <p style={{margin: "0px"}}> I'm a passionate Front End Developer, UI/UX Designer, and content creator.</p>
+                        <p style={{margin: "0px"}}> Let's build something together. </p>
+                  </div>
                   <div className={styles.buttonContainer}>
                         <Button />
                   </div>

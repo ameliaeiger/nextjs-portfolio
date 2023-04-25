@@ -37,7 +37,8 @@
       grid-row: 1;
     
       display: flex;
-      align-items: center;
+      position: relative;
+      top: 25%;
 }
 
 @media screen and (max-width: 1000px) {

@@ -75,6 +75,8 @@
 .lato {
       font-family: "Lato";
 }
+
+
 @keyframes text {
       0% {
         opacity: 0%;

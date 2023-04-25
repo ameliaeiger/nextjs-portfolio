@@ -1,6 +1,7 @@
 // Libraries
 import {Sling as Hamburger} from "hamburger-react"
 import { useEffect, useState } from "react"
+import { Tooltip } from "@mui/material"
 
 // Styles
 import styles from "./styles/menu-styles.module.scss"
@@ -30,12 +31,13 @@ const Menu = ({ isOpen, setIsOpen }) => {
 
             <a className={`text-animate ${styles.hamburger}`} >
                   <Hamburger 
-                        size={30}
+                        size={36}
                         direction="right"
-                        distance="sm"
+                        distance="md"
                         color="black"
                         toggled={isOpen}
                         toggle={() => setIsOpen(!isOpen)}
+                        hideOutline={true}
                         rounded
                   />
             </a>

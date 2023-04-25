@@ -1,0 +1,37 @@
+.techIconsSectionContainer {
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+
+     width: 100%;
+
+     padding: 2%;
+
+     border: 2px solid black;
+}
+
+.iconSection {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+
+
+     padding: 5% 1%;
+
+     background-color: pink;
+}
+
+.iconContainer {
+     display: flex;
+}
+
+.icon {
+     height: 50%;
+     width: auto;
+}
+
+.figma {
+     min-height: 100%;
+     width: auto;
+}

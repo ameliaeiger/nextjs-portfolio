@@ -1,7 +1,7 @@
 .textContainer {
       display: grid;
       grid-template-columns: 33% 33% 33%;
-      grid-template-rows: 45% 10% 5% 12%;
+      grid-template-rows: 35% 10% 10% 12%;
 
       height: 90%;
       width: 100%;
@@ -12,13 +12,13 @@
 }
 
 .CTAtext {
-      grid-column: 1/4;
+      grid-column: 1 / 4;
       grid-row: 2;
 
       display: flex;
       justify-content: center;
       align-items: center;
-      
+            
       color: rgb(0, 0, 0);
       text-shadow: 3px 2px 10px rgba(128, 128, 128, 0.321);
       margin: 0px;
@@ -29,12 +29,26 @@
       grid-row: 3;
 
       display: flex;
+      flex-direction:  column;
       justify-content: center;
       align-items: center;
 
       color: #211f1f;
-      margin: 0px;
-      font-weight: 100;
+ }
+
+ .iconContainer {
+       grid-column: 3;
+       grid-row: 2 / span 2;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;    
+ }
+
+ .icon {
+      width: auto;
+      height: 80%;
+      margin-bottom: 1.2%;
  }
 
 .buttonContainer {
@@ -46,6 +60,19 @@
       align-items: center;
 }
 
+.subheader {
+      grid-column: 1/4;
+      grid-row: 3;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 40px;
+
+      margin-top: 3.1%;
+}
+
 
 /* RED LIGHT */
 @media screen and (min-width: 0px) {
@@ -54,7 +81,7 @@
       }
      .CTAsubtext {
           font-size: calc(14px + 6 * ((100vw - 320px) / 600));
-          top: 5px;
+          top: 2px;
      }
      .heroImage {
       max-height: 70vh;
@@ -63,23 +90,23 @@
 
 
 /* YELLOW LIGHT */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1000px) {
       .CTAtext {
-            font-size: calc(50px + 6 * ((100vw - 320px) / 600));
+            font-size: calc(60px + 6 * ((100vw - 320px) / 600));
       }
      .CTAsubtext {
-          font-size: calc(16px + 6 * ((100vw - 320px) / 600));
+          font-size: calc(14px + 6 * ((100vw - 320px) / 600));
      }
 }
 
 
 /* GREEN LIGHT */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 2000px) {
       .CTAtext {
-            font-size: calc(80px + 6 * ((100vw - 320px) / 600));
+            font-size: calc(90px + 6 * ((100vw - 320px) / 600));
       }
       .CTAsubtext {
-            font-size: calc(18px + 6* ((100vw - 320px) / 600));
+            font-size: calc(10px + 6* ((100vw - 320px) / 600));
       }
 }
 
@@ -131,3 +158,4 @@
        left: 0px;
        background-color: rgba(255, 255, 255, 0.4);
  }
+ 
